@@ -13,20 +13,30 @@
 #     except:
 #         a = 0
 
+# while (True):
+#     x = input("y / n : ")
+#     if (x == "y"):
+#         while (True):
+#             x = input("napiš číslo : ")
+#             try:
+#                 a = int(x)
+#             except:
+#                 a = 0
+#             if (a == 5):
+#                 print("uhodl jsi číslo")
+#                 break
+#     else:
+#         break
+#     y = input("chcete začít znovu ? (y/n)")
+#     if y == "n":
+#         break
+
+a = 0
 while (True):
-    x = input("y / n : ")
-    if (x == "y"):
-        while (True):
-            x = input("napiš číslo : ")
-            try:
-                a = int(x)
-            except:
-                a = 0
-            if (a == 5):
-                print("uhodl jsi číslo")
-                break
-    else:
+    x = input("napiš číslo : ")
+    try:
+        a = int(x)
         break
-    y = input("chcete začít znovu ? (y/n)")
-    if y == "n":
-        break
+    except:
+        pass
+    print(a)
