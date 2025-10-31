@@ -30,3 +30,14 @@ for i in range(len(promena)):
 print("*** \n")
 print(promena[len(promena)-1])
 print(promena[-1])
+
+
+print(promena[5:10:2])  # znaky od <a;b) !!!  včetně a  !!!
+print(promena[10:5:-2])
+
+print (promena[5:])  # včetně 5
+print (promena[:5])
+
+print (promena[::-1])  # string pospátku
+
+print(promena)
