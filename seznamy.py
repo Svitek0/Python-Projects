@@ -20,3 +20,7 @@ x = [1, 2, 8, 4, 6, 11, 7, 4]
 
 for i in range(len(x)):
     if (i%2): print(x[i])
+
+for i in range(len(x)):
+    if (i % 2) ==0:
+        print(x[i])
