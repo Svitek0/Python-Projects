@@ -8,3 +8,14 @@ for i in range(len(promena)):
 
 for i in range(len(promena)-1, -1, -1):
     print(promena[i])
+
+print("*************")
+
+for i in range(len(promena)):
+    print(promena[:i+1])
+
+print("*************")
+
+for i in range(len(promena)-1):
+    print(promena[i:2])
+
