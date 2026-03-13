@@ -45,4 +45,40 @@ cislo = [5,13,7,3,11]
 print(prvocisla_seznam(cislo))
 
 
+def adding(a,b):
+    return a+b
 
+def subtracting(a,b):
+    return a-b
+
+def calculate(function, a,b):
+    return function(a,b)
+
+print("**************")
+print(calculate(adding,1,2))
+print(calculate(subtracting,1,2))
+
+inp1 = int(input("Zadej číslo : "))
+inp2 = int(input("zadej truhy cislo : "))
+inp3 = input("zadejte funkci (+/-)")
+
+if inp3 == "+":
+    print(calculate(adding,inp1,inp2))
+elif inp3 =="-":
+    print(calculate(subtracting, inp1, inp2))
+else:
+    print("neznámá funkce")
+
+
+def jina_fce(a,b,c=10,d=10):
+    return a+b+c+d
+
+print(jina_fce(1,2,5,5))
+
+def jeste_jina_fce(*args):
+    soucet =0
+    for i in range(len(args)):
+        soucet+=args[i]
+    return soucet
+
+print(jeste_jina_fce(1,2,55,1,4,8))
