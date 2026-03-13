@@ -44,3 +44,5 @@ def prvocisla_seznam(vList):
 cislo = [5,13,7,3,11]
 print(prvocisla_seznam(cislo))
 
+
+
