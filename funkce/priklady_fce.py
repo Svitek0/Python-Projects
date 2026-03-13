@@ -20,8 +20,6 @@ x = druhy_nejvetsi(a)
 print(x)
 
 
-
-
 def je_prvocislo(a):
     if a <2:
         return False
@@ -34,3 +32,15 @@ def je_prvocislo(a):
 
 cislo = 21
 print(je_prvocislo(cislo))
+
+
+def prvocisla_seznam(vList):
+    prvocisla = 0
+    for i in range(len(vList)):
+        if je_prvocislo(vList[i]):
+            prvocisla+=1
+    return prvocisla
+
+cislo = [5,13,7,3,11]
+print(prvocisla_seznam(cislo))
+
